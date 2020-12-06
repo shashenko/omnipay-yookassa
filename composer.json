@@ -1,0 +1,46 @@
+{
+    "name": "Sm-Dm/omnipay-yookassa",
+    "type": "library",
+    "description": "YooKassa driver for Omnipay payment processing library",
+    "keywords": [
+        "php",
+        "omnipay",
+        "yookassa",
+        "payment"
+    ],
+    "homepage": "https://github.com/Sm-Dm/omnipay-yookassa",
+    "license": "MIT",
+    "support": {
+        "email": "smirnovdp@gmail.com",
+        "source": "https://github.com/Sm-Dm/omnipay-yookassa",
+        "issues": "https://github.com/Sm-Dm/omnipay-yookassa/issues",
+        "wiki": "https://github.com/Sm-Dm/omnipay-yookassa/wiki",
+    },
+    "authors": [
+        {
+            "name": "Dmitriy Smirnov",
+            "role": "Developer",
+        },
+    ],
+    "require": {
+        "php": ">=7.1",
+        "ext-json": "*",
+        "omnipay/common": "^3.0",
+        "yoomoney/yookassa-sdk-php": "^2.0"
+    },
+    "require-dev": {
+        "omnipay/tests": "^3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Omnipay\\YooKassa\\": "src",
+            "Omnipay\\YooKassa\\Tests\\": "tests/unit"
+        }
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        }
+    ]
+}
