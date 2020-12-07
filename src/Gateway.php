@@ -19,12 +19,11 @@ use Omnipay\YooKassa\Message\DetailsResponse;
 use Omnipay\YooKassa\Message\IncomingNotificationRequest;
 use Omnipay\YooKassa\Message\PurchaseRequest;
 use Symfony\Component\HttpFoundation\Request as HttpRequest;
-use YooCheckout\Client;
+use YooKassa\Client;
 
 /**
  * Class Gateway.
  *
- * @author Dmytro Naumenko <d.naumenko.a@gmail.com>
  */
 class Gateway extends AbstractGateway
 {

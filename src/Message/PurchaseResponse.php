@@ -13,14 +13,11 @@ namespace Omnipay\YooKassa\Message;
 use Omnipay\Common\Exception\InvalidResponseException;
 use Omnipay\Common\Message\AbstractResponse;
 use Omnipay\Common\Message\RedirectResponseInterface;
-use YooCheckout\Model\Confirmation\ConfirmationRedirect;
-use YooCheckout\Request\Payments\CreatePaymentResponse;
+use YooKassa\Model\Confirmation\ConfirmationRedirect;
+use YooKassa\Request\Payments\CreatePaymentResponse;
 
 /**
  * Class PurchaseResponse.
- *
- * @author Dmytro Naumenko <d.naumenko.a@gmail.com>
- *
  *
  * @property CreatePaymentResponse $data
  */

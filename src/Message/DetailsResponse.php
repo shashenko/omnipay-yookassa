@@ -13,12 +13,11 @@ namespace Omnipay\YooKassa\Message;
 use Omnipay\Common\Exception\InvalidResponseException;
 use Omnipay\Common\Message\AbstractResponse;
 use Omnipay\Common\Message\RequestInterface;
-use YooCheckout\Model\PaymentInterface;
+use YooKassa\Model\PaymentInterface;
 
 /**
  * Class DetailsResponse.
  *
- * @author Dmytro Naumenko <d.naumenko.a@gmail.com>
  * @property PaymentInterface $data
  */
 class DetailsResponse extends AbstractResponse

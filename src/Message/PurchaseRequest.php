@@ -16,7 +16,6 @@ use Throwable;
 /**
  * Class PurchaseRequest.
  *
- * @author Dmytro Naumenko <d.naumenko.a@gmail.com>
  */
 class PurchaseRequest extends AbstractRequest
 {

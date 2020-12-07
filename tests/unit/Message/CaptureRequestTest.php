@@ -19,9 +19,9 @@ class CaptureRequestTest extends TestCase
     /** @var CaptureRequest */
     private $request;
 
-    private $shopId               = '54401';
-    private $secretKey            = 'test_Fh8hUAVVBGUGbjmlzba6TB0iyUbos_lueTHE-axOwM0';
-    private $transactionReference = '2475e163-000f-5000-9000-18030530d620';
+    private $shopId               = '717161';
+    private $secretKey            = 'test_jcOVYyyyloYVdkuJq6-_Z9Mh0yxwpXEDBbaSf2tqfGI';
+    private $transactionReference = '275eeffd-000f-5000-8000-150dec00cdb0';
     private $transactionId        = '5ce3cdb0d1436';
     private $amount               = '187.50';
     private $currency             = 'RUB';
@@ -43,13 +43,13 @@ class CaptureRequestTest extends TestCase
         ]);
     }
 
-    public function testGetData()
+    public function testGetData(): void
     {
         $data = $this->request->getData();
         $this->assertEmpty($data);
     }
 
-    public function testSendData()
+    public function testSendData(): void
     {
         $curlClientStub = $this->getCurlClientStub();
         $curlClientStub->method('sendRequest')->willReturn([

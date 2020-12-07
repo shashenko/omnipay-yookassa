@@ -14,13 +14,13 @@
         "email": "smirnovdp@gmail.com",
         "source": "https://github.com/Sm-Dm/omnipay-yookassa",
         "issues": "https://github.com/Sm-Dm/omnipay-yookassa/issues",
-        "wiki": "https://github.com/Sm-Dm/omnipay-yookassa/wiki",
+        "wiki": "https://github.com/Sm-Dm/omnipay-yookassa/wiki"
     },
     "authors": [
         {
             "name": "Dmitriy Smirnov",
-            "role": "Developer",
-        },
+            "role": "Developer"
+        }
     ],
     "require": {
         "php": ">=7.1",

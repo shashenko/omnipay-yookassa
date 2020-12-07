@@ -15,8 +15,6 @@ use Throwable;
 
 /**
  * Class CompletePurchaseRequest.
- *
- * @author Dmytro Naumenko <d.naumenko.a@gmail.com>
  */
 class CaptureRequest extends AbstractRequest
 {

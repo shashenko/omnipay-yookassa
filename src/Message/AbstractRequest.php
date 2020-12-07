@@ -10,12 +10,11 @@
 
 namespace Omnipay\YooKassa\Message;
 
-use YooCheckout\Client;
+use YooKassa\Client;
 
 /**
  * Class AbstractRequest.
  *
- * @author Dmytro Naumenko <d.naumenko.a@gmail.com>
  */
 abstract class AbstractRequest extends \Omnipay\Common\Message\AbstractRequest
 {
