@@ -1,5 +1,5 @@
 {
-    "name": "Sm-Dm/omnipay-yookassa",
+    "name": "smdmphd/omnipay-yookassa",
     "type": "library",
     "description": "YooKassa driver for Omnipay payment processing library",
     "keywords": [
@@ -8,13 +8,13 @@
         "yookassa",
         "payment"
     ],
-    "homepage": "https://github.com/Sm-Dm/omnipay-yookassa",
+    "homepage": "https://github.com/smdmphd/omnipay-yookassa",
     "license": "MIT",
     "support": {
         "email": "smirnovdp@gmail.com",
-        "source": "https://github.com/Sm-Dm/omnipay-yookassa",
-        "issues": "https://github.com/Sm-Dm/omnipay-yookassa/issues",
-        "wiki": "https://github.com/Sm-Dm/omnipay-yookassa/wiki"
+        "source": "https://github.com/smdmphd/omnipay-yookassa",
+        "issues": "https://github.com/smdmphd/omnipay-yookassa/issues",
+        "wiki": "https://github.com/smdmphd/omnipay-yookassa/wiki"
     },
     "authors": [
         {
