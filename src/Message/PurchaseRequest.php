@@ -21,7 +21,7 @@ class PurchaseRequest extends AbstractRequest
 {
     public function getData()
     {
-        $this->validate('amount', 'currency', 'returnUrl', 'transactionId', 'description', 'capture');
+        $this->validate('amount', 'currency', 'returnUrl', 'transactionId', 'description', 'capture', 'receipt');
 
         return [
             'amount' => $this->getAmount(),
@@ -30,6 +30,7 @@ class PurchaseRequest extends AbstractRequest
             'return_url' => $this->getReturnUrl(),
             'transactionId' => $this->getTransactionId(),
             'capture' => $this->getCapture(),
+            'receipt' => $this->getReceipt(),
         ];
     }
 
@@ -50,16 +51,22 @@ class PurchaseRequest extends AbstractRequest
                 'metadata' => [
                     'transactionId' => $data['transactionId'],
                 ],
+                'receipt' => $data['receipt'],
             ], $this->makeIdempotencyKey());
 
             return $this->response = new PurchaseResponse($this, $paymentResponse);
-        } catch (Throwable $e) {
+        } catch (\Throwable $e) {
             throw new InvalidRequestException('Failed to request purchase: ' . $e->getMessage(), 0, $e);
         }
     }
 
     private function makeIdempotencyKey(): string
     {
-        return md5(implode(',', array_merge(['create'], $this->getData())));
+        $data = $this->getData();
+        if (isset($data['receipt'])) {
+            $data['receipt'] = json_encode($data['receipt']);
+        }
+
+        return md5(implode(',', array_merge(['create'], $data)));
     }
 }

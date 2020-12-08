@@ -10,6 +10,7 @@
 
 namespace Omnipay\YooKassa\Message;
 
+use Modules\PersonalAccount\Entities\YandexKassaPurchaseRequest;
 use YooKassa\Client;
 
 /**
@@ -51,6 +52,27 @@ abstract class AbstractRequest extends \Omnipay\Common\Message\AbstractRequest
     public function setCapture($value)
     {
         return $this->setParameter('capture', $value);
+    }
+
+    /**
+     * Get the request receipt data.
+     *
+     * @return array
+     */
+    public function getReceipt()
+    {
+        return $this->getParameter('receipt');
+    }
+
+    /**
+     * Sets the request receipt data.
+     *
+     * @param array $value
+     * @return $this
+     */
+    public function setReceipt($value)
+    {
+        return $this->setParameter('receipt', $value);
     }
 
     public function setYooClient(Client $client): void
