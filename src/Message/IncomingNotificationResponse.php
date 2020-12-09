@@ -15,25 +15,6 @@ use Omnipay\Common\Message\RequestInterface;
 
 class IncomingNotificationResponse extends AbstractResponse
 {
-    /**
-     * @return RequestInterface|AbstractRequest
-     */
-    public function getRequest()
-    {
-        return parent::getRequest();
-    }
-
-    /**
-     * CompletePurchaseResponse constructor.
-     * @param RequestInterface $request
-     * @param array $data
-     * @throws \Exception
-     */
-    public function __construct(RequestInterface $request, $data)
-    {
-        parent::__construct($request, $data);
-    }
-
     public function getTransactionId()
     {
         return $this->data['object']['metadata']['transactionId'] ?? null;
