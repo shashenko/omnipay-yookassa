@@ -1,5 +1,5 @@
 {
-    "name": "smdmphd/omnipay-yookassa",
+    "name": "shashenko/omnipay-yookassa",
     "type": "library",
     "description": "YooKassa driver for Omnipay payment processing library",
     "keywords": [
@@ -8,28 +8,32 @@
         "yookassa",
         "payment"
     ],
-    "homepage": "https://github.com/smdmphd/omnipay-yookassa",
+    "homepage": "https://github.com/shashenko/omnipay-yookassa",
     "license": "MIT",
     "support": {
-        "email": "smirnovdp@gmail.com",
-        "source": "https://github.com/smdmphd/omnipay-yookassa",
-        "issues": "https://github.com/smdmphd/omnipay-yookassa/issues",
-        "wiki": "https://github.com/smdmphd/omnipay-yookassa/wiki"
+        "email": "saa@albatrosscom.ru",
+        "source": "https://github.com/shashenko/omnipay-yookassa",
+        "issues": "https://github.com/shashenko/omnipay-yookassa/issues",
+        "wiki": "https://github.com/shashenko/omnipay-yookassa/wiki"
     },
     "authors": [
+        {
+            "name": "Shashenko Andrey",
+            "role": "Developer"
+        },
         {
             "name": "Dmitriy Smirnov",
             "role": "Developer"
         }
     ],
     "require": {
-        "php": ">=7.1",
+        "php": ">=5.6",
         "ext-json": "*",
-        "omnipay/common": "^3.0",
+        "omnipay/common": "^2.0",
         "yoomoney/yookassa-sdk-php": "^2.0"
     },
     "require-dev": {
-        "omnipay/tests": "^3.0"
+        "omnipay/tests": "^2.0"
     },
     "autoload": {
         "psr-4": {
